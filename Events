@@ -1,0 +1,46 @@
+
+<html>
+<head>
+<script>
+function loadFunction() {
+  alert("Page is loaded");
+}
+function myFunction() {
+  var x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
+function confirmInput() {
+  fname = document.forms[0].Sname.value;
+  alert("Hello " + Sname + "! You will now be redirected to www.github.com/SANJU-SURENDRAN");
+}
+function clickFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+function preferedBrowser() {
+  prefer = document.forms[0].browsers.value;
+  alert("You prefer browsing internet with " + prefer);
+}
+</script>
+</head>
+<body onload="loadFunction()">
+<button onclick="clickFunction()">Click me</button>
+<p id="demo"></p>
+
+Enter your name: <input type="text" id="fname" onblur="myFunction()">
+
+<p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+
+<form onsubmit="confirmInput()" action="https://www.github.com/SANJU-SURENDRAN/">
+  Enter your name: <input id="Sname" type="text" size="20">
+  <input type="submit">
+</form>
+<form>
+Choose which browser you prefer:
+  <select id="browsers" onchange="preferedBrowser()">
+    <option value="Chrome">Chrome</option>
+    <option value="Internet Explorer">Internet Explorer</option>
+    <option value="Firefox">Firefox</option>
+  </select>
+</form>
+</body>
+</html>
