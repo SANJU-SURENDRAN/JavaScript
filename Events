@@ -10,7 +10,7 @@ function myFunction() {
   x.value = x.value.toUpperCase();
 }
 function confirmInput() {
-  fname = document.forms[0].Sname.value;
+  Sname = document.forms[0].Sname.value;
   alert("Hello " + Sname + "! You will now be redirected to www.github.com/SANJU-SURENDRAN");
 }
 function clickFunction() {
