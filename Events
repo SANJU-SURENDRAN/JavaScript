@@ -33,9 +33,7 @@ Enter your name: <input type="text" id="fname" onblur="myFunction()">
 <form onsubmit="confirmInput()" action="https://www.github.com/SANJU-SURENDRAN/">
   Enter your name: <input id="Sname" type="text" size="20">
   <input type="submit">
-</form>
-<form>
-Choose which browser you prefer:
+  Choose which browser you prefer:
   <select id="browsers" onchange="preferedBrowser()">
     <option value="Chrome">Chrome</option>
     <option value="Internet Explorer">Internet Explorer</option>
